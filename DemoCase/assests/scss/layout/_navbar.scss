@@ -1,0 +1,713 @@
+// navbar started
+.navbar {
+    position: relative;
+
+    #volume {
+        position: absolute;
+        bottom: 30%;
+        right: 12%;
+    }
+
+    .fa-solid {
+        display: none;
+    }
+
+    .listHan {
+        transform: translateX(-100%);
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 45px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        width: 250px;
+        min-height: 602px;
+        background-color: #1F1F1F;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        transition: transform 0.5s ease;
+    }
+
+    .listOpen {
+        transform: translateX(0);
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 45px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        width: 250px;
+        min-height: 602px;
+        background-color: #1F1F1F;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+
+        .navbarMenuHanburger {
+            padding-top: 5px;
+
+            a {
+                color: #fff;
+
+            }
+        }
+
+
+    }
+
+
+    background-image: url("../img/Cover-Back-Area.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// navbar end
+
+// navbarContent started
+.navbarContent {
+    display: flex;
+    align-items: normal;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+
+    .navMenuOne {
+        width: 29%;
+        display: flex;
+        align-items: normal;
+        justify-content: space-between;
+
+        h2 {
+            color: #fff;
+            font-size: 23px;
+        }
+
+        .navbarMenu {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 255px;
+            height: 43px;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            background-color: rgba(169, 169, 169, 0.5);
+            border-radius: 8px;
+
+            .list {
+                display: none;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                width: 100px;
+                height: 150px;
+                border-radius: 5px;
+            }
+
+            &.active .list {
+                display: block;
+            }
+
+            li {
+                padding: 10px 8px;
+                font-weight: 400;
+                font-family: 'Poppins', sans-serif;
+            }
+        }
+
+        li {
+            padding-left: 20px;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    .navMenuTwo {
+        .fa-solid {
+            display: none;
+        }
+
+        cursor: pointer;
+        position: relative;
+        width: 18%;
+        display: flex;
+        align-items: normal;
+        justify-content: space-between;
+
+        .navWatchlistMovie {
+            // display: none !important;
+            opacity: 0;
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            top: 50px;
+            right: 120px;
+            width: 430px;
+            height: 300px;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            border-radius: 8px;
+            background-color: rgba(169, 169, 169, 0.5);
+            color: #fff;
+            overflow-y: scroll;
+            display: flex !important;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+
+            .fullSize {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 400px;
+                height: 70px;
+
+                .cardInf {
+                    background-color: #1F1F1F;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 70%;
+                    height: 70px;
+
+                    i {
+                        padding-left: 10px;
+                        width: 20px;
+                        display: block;
+                    }
+                }
+
+                .fullImgSize {
+                    background-size: cover;
+                    background-position: center;
+                    width: 100px;
+                    height: 70px;
+                }
+            }
+        }
+
+        .navWatchlist {
+            cursor: pointer;
+            width: 137px;
+            height: 43px;
+            border-radius: 8px;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            background-color: rgba(169, 169, 169, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navSignIn {
+            width: 99px;
+            height: 43px;
+            border-radius: 8px;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            background-color: rgba(169, 169, 169, 0.5);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+// navbarContent end
+
+
+// tablet responsive started
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-image: url("../img/Cover-Back-Area.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 330px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        #volume {
+            position: absolute;
+            bottom: 30%;
+            right: 10%;
+        }
+    }
+
+    // navbar end
+
+    // navbarContend started
+    .navbarContent {
+        display: flex;
+        align-items: normal;
+        justify-content: space-between;
+        font-family: 'Poppins', sans-serif;
+
+        .navMenuOne {
+            width: 29%;
+            display: flex;
+            align-items: normal;
+            justify-content: space-between;
+
+            h2 {
+                color: #fff;
+                font-size: 23px;
+                padding-right: 10px;
+            }
+
+            .navbarMenu {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 255px;
+                height: 37px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                border-radius: 8px;
+
+                .list {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    border: 1px solid rgba(15, 247, 240, 0.4);
+                    background-color: rgba(169, 169, 169, 0.5);
+                    color: #fff;
+                    width: 100px;
+                    height: 150px;
+                    border-radius: 5px;
+                }
+
+                &.active .list {
+                    display: block;
+                }
+
+                .len {
+                    width: 55px;
+                }
+
+                li {
+                    font-size: 15px;
+                    padding: 10px 8px;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+
+                }
+            }
+
+            li {
+                padding-left: 20px;
+
+                a {
+                    color: #fff;
+
+                }
+            }
+        }
+
+        .navMenuTwo {
+            cursor: pointer;
+            position: relative;
+            width: 18%;
+            display: flex;
+            align-items: normal;
+            justify-content: space-between;
+
+            .navWatchlistMovie {
+                display: none;
+                font-family: 'Poppins', sans-serif;
+                position: absolute;
+                top: 43px;
+                right: 125px;
+                width: 330px;
+                height: 200px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                border-radius: 8px;
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                overflow-y: scroll;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 30px;
+
+                .fullSize {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 270px;
+                    height: 70px;
+
+                    .cardInf {
+                        background-color: #1F1F1F;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 70%;
+                        height: 70px;
+
+                        i {
+                            padding-left: 10px;
+                        }
+                    }
+
+                    .fullImgSize {
+                        background-size: cover;
+                        background-position: center;
+                        width: 70px;
+                        height: 40px;
+                    }
+                }
+            }
+
+
+            .navWatchlist {
+                cursor: pointer;
+                font-size: 13px;
+                width: 137px;
+                height: 37px;
+                border-radius: 8px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .navSignIn {
+                margin-left: 10px;
+                font-size: 13px;
+                width: 99px;
+                height: 37px;
+                border-radius: 8px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .navWatchlistMovie {
+        display: none;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        top: 50px;
+        right: 120px;
+        width: 430px;
+        height: 300px;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+        border-radius: 8px;
+        background-color: rgba(169, 169, 169, 0.5);
+        color: #fff;
+        overflow-y: scroll;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px !important;
+
+        .fullSize {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 70px;
+
+            .cardInf {
+                background-color: #1F1F1F;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100% !important;
+                height: 50px !important;
+                font-size: 12px;
+
+                i {
+                    // padding-right: 5px !important;
+                    width: 20px;
+                    display: block;
+                    font-size: 15px;
+                }
+            }
+
+            .fullImgSize {
+                background-size: cover;
+                background-position: center;
+                width: 100px;
+                height: 50px !important;
+            }
+        }
+    }
+
+    // navbarContent end
+}
+
+// tablet responsive end
+
+@media only screen and (max-width: 378px) {
+    .navbar {
+        background-image: url("../img/Cover-Back-Area.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 20px;
+
+        #volume {
+            position: absolute;
+            right: 9%;
+            bottom: 30%;
+            width: 28px;
+        }
+    }
+
+    // navbar end
+
+    // navbarContend started
+    .navbarContent {
+        .fa-solid {
+            display: block;
+            color: #fff;
+            font-size: 25px;
+        }
+
+        display: flex;
+        align-items: normal;
+        justify-content: space-between;
+        font-family: 'Poppins',
+        sans-serif;
+
+        .navMenuOne {
+            width: 29%;
+            display: flex;
+            align-items: normal;
+            justify-content: space-between;
+
+            h2 {
+                color: #fff;
+                font-size: 23px;
+                padding-right: 10px;
+            }
+
+            .navbarMenu {
+                display: none !important;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 255px;
+                height: 37px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                border-radius: 8px;
+
+                .list {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    right: 0;
+                    border: 1px solid rgba(15, 247, 240, 0.4);
+                    background-color: rgba(169, 169, 169, 0.5);
+                    color: #fff;
+                    width: 100px;
+                    height: 150px;
+                    border-radius: 5px;
+                }
+
+                &.active .list {
+                    display: block;
+                }
+
+                .len {
+                    width: 55px;
+                }
+
+                li {
+                    font-size: 15px;
+                    padding: 10px 8px;
+                    font-weight: 400;
+                    font-family: 'Poppins', sans-serif;
+
+                }
+            }
+
+            li {
+                padding-left: 20px;
+
+                a {
+                    color: #fff;
+
+                }
+            }
+        }
+
+        .navMenuTwo {
+            display: none !important;
+            cursor: pointer;
+            position: relative;
+            width: 18%;
+            display: flex;
+            align-items: normal;
+            justify-content: space-between;
+
+            .navWatchlistMovie {
+                display: none;
+                font-family: 'Poppins', sans-serif;
+                position: absolute;
+                top: 50px;
+                right: 120px;
+                width: 430px;
+                height: 300px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                border-radius: 8px;
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                overflow-y: scroll;
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                gap: 5px !important;
+
+                .fullSize {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 400px;
+                    height: 70px;
+
+                    .cardInf {
+                        background-color: #1F1F1F;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100% !important;
+                        height: 50px !important;
+                        font-size: 12px;
+
+                        i {
+                            // padding-right: 5px !important;
+                            width: 20px;
+                            display: block;
+                            font-size: 15px;
+                        }
+                    }
+
+                    .fullImgSize {
+                        background-size: cover;
+                        background-position: center;
+                        width: 100px;
+                        height: 50px !important;
+                    }
+                }
+            }
+
+
+            .navWatchlist {
+                cursor: pointer;
+                font-size: 13px;
+                width: 137px;
+                height: 37px;
+                border-radius: 8px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .navSignIn {
+                margin-left: 10px;
+                font-size: 13px;
+                width: 99px;
+                height: 37px;
+                border-radius: 8px;
+                border: 1px solid rgba(15, 247, 240, 0.4);
+                background-color: rgba(169, 169, 169, 0.5);
+                color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+    }
+
+    .navWatchlistMovieTwo {
+        display: none !important;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        top: 50px;
+        right: 120px;
+        width: 430px;
+        height: 300px;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+        border-radius: 8px;
+        background-color: rgba(169, 169, 169, 0.5);
+        color: #fff;
+        overflow-y: scroll;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+
+        .fullSize {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            height: 70px;
+
+            .cardInf {
+                background-color: #1F1F1F;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                width: 70%;
+                height: 70px;
+
+                i {
+                    padding-left: 10px;
+                }
+            }
+
+            .fullImgSize {
+                background-size: cover;
+                background-position: center;
+                width: 100px;
+                height: 70px;
+            }
+        }
+    }
+
+    // navbarContent end
+}
+
+// phone responsive end

@@ -1,0 +1,915 @@
+// sectionOne started
+.slideOne {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1F1F1F;
+    // border: 1px solid wheat;
+
+
+    .center {
+        .center {
+            display: flex;
+            align-items: center;
+            position: relative;
+            // border: 1px solid wheat;
+            z-index: 1 !important;
+        }
+
+        // border: 1px solid wheat;
+    }
+}
+
+// sectionOne end
+
+// sectionTwo started
+.slideTwo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #1F1F1F;
+
+    .center {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+
+    }
+}
+
+// sectionTwo end
+
+
+// slide card started
+.cardImg {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/Images.png");
+
+}
+
+.card {
+    transition: transform 0.3s;
+    /* Kartın animasyonlu geçişini sağlamak için transition ekleyin */
+    background-color: #1F1F1F;
+    width: 297px !important;
+    height: 250px !important;
+    margin: 10px;
+    // border: 1px solid wheat;
+    border-radius: 8px;
+    z-index: 2 !important;
+}
+
+.cardDetalies {
+    display: flex;
+    flex-direction: column;
+}
+
+.cardDateDetal {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    p {
+        color: #FFF;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 25px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    h4 {
+        color: #FFF;
+        font-family: 'Poppins', sans-serif;
+        padding-top: 25px;
+        font-size: 14px;
+        font-weight: 400;
+        // display: none;
+    }
+}
+
+.cardWatchlist {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img[alt="Play"] {
+        background-color: #0CF9F0;
+        margin-left: 15px;
+    }
+
+
+    img {
+        cursor: pointer;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+        color: #fff;
+        padding: 5px;
+        width: 34.105px;
+        height: 34.105px;
+        border-radius: 34.105px;
+        background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+        box-shadow: -2.062026023864746px -2.062026023864746px 103.10130310058594px 0px rgba(255, 255, 255, 0.02) inset;
+        backdrop-filter: blur(4.263156890869141px);
+    }
+}
+
+.fa-angle-left {
+    cursor: pointer;
+    left: 40px;
+    top: 30%;
+    position: absolute;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.fa-chevron-right {
+    cursor: pointer;
+    right: 40px;
+    top: 30%;
+    position: absolute;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+    font-size: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffff;
+
+
+
+
+
+}
+
+// slide card end
+
+// card hover effect started
+//   .card:hover {
+//     width: 442px;
+//     height: 550px;
+//     position: relative;
+//     z-index: 2 !important;
+
+//     .cardImg {
+//       width: 100%;
+//       height: 80%;
+
+//     }
+
+//     .cardDateDetal {
+//       h4 {
+//         display: block  !important;
+//       }
+//     }
+
+//     .cardWatchlist {
+//       display: block !important;
+//     }
+
+//     // transform: scale(1.2); 
+//     // transform-origin: center; 
+//   }
+//   .slideOne .center,
+//   .slideTwo .center {
+//     padding: 0; /* .center içindeki padding'i kaldırın */
+//   }
+// // card hover effect end
+
+//forms started
+.forms {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(31, 31, 31, 0.5);
+    position: absolute;
+    top: 10.5%;
+    transition: opacity 0.3s ease;
+}
+
+.formsContent {
+    width: 510px;
+    height: 527px;
+    border: 1px solid rgba(15, 247, 240, 0.4);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: center;
+    gap: 5px;
+
+    form {
+        h1 {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 1);
+
+        }
+
+        input {
+            margin: 10px 0;
+            width: 369px;
+            height: 52px;
+            border-radius: 8px;
+            border: 1px solid;
+            border: 1px solid;
+            border-image-source: linear-gradient(180deg, #0FF7F0 0%, #D685FF 100%);
+
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(0deg, #0D0D0D, #0D0D0D),
+                linear-gradient(180deg, #0FF7F0 0%, #D685FF 100%);
+            padding-left: 30px;
+
+        }
+
+    }
+
+    .formTitle {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        h1 {
+            font-size: 30px;
+        }
+
+        a {
+            color: rgba(255, 255, 255, 1);
+            font-size: 18px;
+        }
+    }
+
+    .formDetalis {
+        a {
+            color: #FFF;
+            font-size: 12px;
+            display: flex;
+            justify-content: end;
+            padding-bottom: 15px;
+        }
+
+
+    }
+}
+
+.formButtons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .formBtntwo {
+        width: 170px;
+        height: 48px;
+        border-radius: 55px;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+        box-shadow: -3.325335741043091px -3.325335741043091px 166.2667999267578px 0px #FFFFFF05 inset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+
+        &:hover {
+            background-color: rgba(15, 247, 240, 0.4);
+        }
+    }
+}
+
+.formText {
+    font-size: 12px;
+    color: #FFFFFF99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+//forms end
+
+// tablet responsive started
+@media only screen and (max-width: 768px) {
+
+    // sectionOne started
+    .slideOne {
+        width: 100%;
+        // display: flex;
+        justify-content: center;
+        background-color: #1F1F1F;
+        // border: 1px solid wheat;
+
+
+        .center {
+            .center {
+                display: flex;
+                align-items: center;
+                position: relative;
+                z-index: 1 !important;
+            }
+
+            // border: 1px solid wheat;
+        }
+    }
+
+    // sectionOne end
+
+    // sectionTwo started
+    .slideTwo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #1F1F1F;
+
+        .center {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+
+        }
+    }
+
+    // sectionTwo end
+
+
+    // slide card started
+    .cardImg {
+        width: 100%;
+        height: 140px;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../img/Images.png");
+
+    }
+
+    .card {
+        transition: transform 0.3s;
+        background-color: #1F1F1F;
+        width: 173px !important;
+        height: 230px !important;
+        margin: 10px;
+        border-radius: 8px;
+        z-index: 2 !important;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+
+    }
+
+    .cardDetalies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardDateDetal {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+
+        p {
+            color: #FFF;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 25px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+
+        h4 {
+            display: none;
+            color: #FFF;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 25px;
+            font-size: 10px;
+            font-weight: 200;
+        }
+    }
+
+    .cardWatchlist {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img[alt="Play"] {
+            background-color: #0CF9F0;
+            margin-left: 15px;
+
+        }
+
+
+        img {
+            cursor: pointer;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            color: #fff;
+            padding: 5px;
+            width: 24.105px;
+            height: 24.105px;
+            border-radius: 34.105px;
+            background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: -2.062026023864746px -2.062026023864746px 103.10130310058594px 0px rgba(255, 255, 255, 0.02) inset;
+            backdrop-filter: blur(4.263156890869141px);
+        }
+    }
+
+    .fa-angle-left {
+        cursor: pointer;
+        left: 40px;
+        top: 30%;
+        position: absolute;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+        font-size: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+    }
+
+    .fa-chevron-right {
+        cursor: pointer;
+        right: 40px;
+        top: 30%;
+        position: absolute;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        z-index: 2;
+        font-size: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffff;
+
+
+
+
+
+    }
+
+    // slide card end
+
+    //forms started
+    .forms {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(31, 31, 31, 0.5);
+        position: absolute;
+        top: 17.5%;
+        transition: opacity 0.3s ease;
+    }
+
+    .formsContent {
+        width: 450px;
+        height: 400px;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        gap: 5px;
+
+        form {
+            h1 {
+                font-size: 12px;
+                color: rgba(255, 255, 255, 1);
+
+            }
+
+            input {
+                margin: 10px 0;
+                width: 369px;
+                height: 45px;
+                border-radius: 8px;
+                border: 1px solid;
+                border: 1px solid;
+                border-image-source: linear-gradient(180deg, #0FF7F0 0%, #D685FF 100%);
+
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                background: linear-gradient(0deg, #0D0D0D, #0D0D0D),
+                    linear-gradient(180deg, #0FF7F0 0%, #D685FF 100%);
+                padding-left: 30px;
+
+            }
+
+        }
+
+        .formTitle {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            h1 {
+                font-size: 22px;
+            }
+
+            a {
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+            }
+        }
+
+        .formDetalis {
+            a {
+                color: #FFF;
+                font-size: 10px;
+                display: flex;
+                justify-content: end;
+                padding-bottom: 8px;
+            }
+
+
+        }
+    }
+
+    .formButtons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+
+        .formBtntwo {
+            width: 138px;
+            height: 38px;
+            border-radius: 55px;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            box-shadow: -3.325335741043091px -3.325335741043091px 166.2667999267578px 0px #FFFFFF05 inset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+
+            &:hover {
+                background-color: rgba(15, 247, 240, 0.4);
+            }
+        }
+    }
+
+    .formText {
+        font-size: 10px;
+        color: #FFFFFF99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    //forms end
+}
+
+// tablet responsive end
+
+// phone responsive started
+
+@media only screen and (max-width: 378px) {
+
+    // sectionOne started
+    .slideOne {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #1F1F1F;
+
+
+        .center {
+            .center {
+                display: flex;
+                align-items: center;
+                position: relative;
+                z-index: 1 !important;
+            }
+
+        }
+    }
+
+    // sectionOne end
+
+    // sectionTwo started
+    .slideTwo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        background-color: #1F1F1F;
+
+        .center {
+            display: flex;
+            align-items: center;
+            position: relative;
+
+
+        }
+    }
+
+    // sectionTwo end
+
+
+    // slide card started
+    .cardImg {
+        width: 100%;
+        height: 100px;
+        border-radius: 8px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("../img/Images.png");
+
+    }
+
+    .card {
+        transition: transform 0.3s;
+        background-color: #1F1F1F;
+        width: 160px !important;
+        height: 186px !important;
+        margin: 10px;
+        border-radius: 8px;
+        z-index: 2 !important;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+
+    }
+
+    .cardDetalies {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cardDateDetal {
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+
+        p {
+            color: #FFF;
+            font-family: 'Poppins', sans-serif;
+            margin: 5px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+
+        h4 {
+            display: none;
+            color: #FFF;
+            font-family: 'Poppins', sans-serif;
+            padding-top: 25px;
+            font-size: 10px;
+            font-weight: 400;
+        }
+    }
+
+    .cardWatchlist {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img[alt="Play"] {
+            background-color: #0CF9F0;
+            margin-left: 10px;
+        }
+
+
+        img {
+            cursor: pointer;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            color: #fff;
+            padding: 5px;
+            width: 20.105px;
+            height: 20.105px;
+            border-radius: 34.105px;
+            background: radial-gradient(107.32% 141.42% at 0% 0%, rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 0.00) 100%);
+            box-shadow: -2.062026023864746px -2.062026023864746px 103.10130310058594px 0px rgba(255, 255, 255, 0.02) inset;
+            backdrop-filter: blur(4.263156890869141px);
+        }
+    }
+
+    .fa-angle-left {
+        cursor: pointer;
+        left: 40px;
+        top: 30%;
+        position: absolute;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 40px;
+        z-index: 2;
+        font-size: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffffff;
+    }
+
+    .fa-chevron-right {
+        cursor: pointer;
+        right: 40px;
+        top: 30%;
+        position: absolute;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 60px;
+        width: 60px;
+        z-index: 2;
+        font-size: 40px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: #ffff;
+
+
+
+
+
+    }
+
+    // slide card end
+
+    // card hover effect started
+    //   .card:hover {
+    //     width: 222px;
+    //     height: 200px;
+    //     position: relative;
+    //     z-index: 2 !important;
+
+    //     .cardImg {
+    //       width: 100%;
+    //       height: 80%;
+
+    //     }
+
+    //     .cardDateDetal {
+    //       h4 {
+    //         display: block  !important;
+    //       }
+    //     }
+
+    //     .cardWatchlist {
+    //       display: block !important;
+    //     }
+
+    //     transform: scale(1.2); 
+    //     transform-origin: center; 
+    //   }
+    //   .slideOne .center,
+    //   .slideTwo .center {
+    //     padding: 0; /* .center içindeki padding'i kaldırın */
+    //   }
+    // card hover effect end
+
+    //forms started
+    .forms {
+        font-family: 'Poppins', sans-serif;
+        color: #fff;
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(31, 31, 31, 0.5);
+        position: absolute;
+        top: 17.5%;
+        transition: opacity 0.3s ease;
+    }
+
+    .formsContent {
+        width: 450px;
+        height: 400px;
+        border: 1px solid rgba(15, 247, 240, 0.4);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        gap: 5px;
+
+        form {
+            h1 {
+                font-size: 12px;
+                color: rgba(255, 255, 255, 1);
+
+            }
+
+            input {
+                margin: 10px 0;
+                width: 369px;
+                height: 45px;
+                border-radius: 8px;
+                border: 1px solid;
+                border: 1px solid;
+                border-image-source: linear-gradient(180deg, #0FF7F0 0%, #D685FF 100%);
+
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+                background: linear-gradient(0deg, #0D0D0D, #0D0D0D),
+                    linear-gradient(180deg, #0FF7F0 0%, #D685FF 100%);
+                padding-left: 30px;
+
+            }
+
+        }
+
+        .formTitle {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            h1 {
+                font-size: 22px;
+            }
+
+            a {
+                color: rgba(255, 255, 255, 1);
+                font-size: 14px;
+            }
+        }
+
+        .formDetalis {
+            a {
+                color: #FFF;
+                font-size: 10px;
+                display: flex;
+                justify-content: end;
+                padding-bottom: 8px;
+            }
+
+
+        }
+    }
+
+    .formButtons {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+
+        .formBtntwo {
+            width: 138px;
+            height: 38px;
+            border-radius: 55px;
+            border: 1px solid rgba(15, 247, 240, 0.4);
+            box-shadow: -3.325335741043091px -3.325335741043091px 166.2667999267578px 0px #FFFFFF05 inset;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
+
+            &:hover {
+                background-color: rgba(15, 247, 240, 0.4);
+            }
+        }
+    }
+
+    .formText {
+        font-size: 10px;
+        color: #FFFFFF99;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    //forms end
+}
+
+// phone responsive end
