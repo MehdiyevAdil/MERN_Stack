@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Factorial</title>
+</head>
+
+<body>
+    <div class="classSize homeWork-1">
+        <h1>Factorial</h1>
+        <input type="text" id="number-1" placeholder="ededi daxil edin">
+        <input type="text" id="result" placeholder="Cavab">
+        <button onclick="homeWorkOne()">Nəticə</button>
+    </div>
+    <script>
+
+        function homeWorkOne() {
+            var num1 = parseFloat(document.getElementById('number-1').value);
+            let result = 1;
+            for (let i = 1; i <= num1; i++) {
+                result *= i;
+            }
+            document.getElementById('result').value = result;
+        }
+
+    </script>
+</body>
+
+</html>

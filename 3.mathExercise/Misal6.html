@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Paraleloqram</title>
+</head>
+
+<body>
+    <div class="classSize homeWork-1">
+        <h1>Paraleloqram</h1>
+        <input type="text" id="number-1" placeholder="ededi daxil edin">
+        <input type="text" id="number-2" placeholder="ededi daxil edin">
+        <input type="text" id="number-3" placeholder="ededi daxil edin">
+        <input type="text" id="number-4" placeholder="ededi daxil edin">
+        <input type="text" id="result" placeholder="Cavab">
+        <button onclick="homeWorkOne()">Nəticə</button>
+    </div>
+    <script>
+        function homeWorkOne() {
+            var corner1 = parseFloat(document.getElementById('number-1').value);
+            var corner2 = parseFloat(document.getElementById('number-2').value);
+            var corner3 = parseFloat(document.getElementById('number-3').value);
+            var corner4 = parseFloat(document.getElementById('number-4').value);
+            var sum;
+            if (corner1 === corner3 && corner2 === corner4) {
+                sum = "Yes";
+            } else {
+                sum = "No";
+            }
+            document.getElementById('result').value = sum;
+        }
+    </script>
+</body>
+
+</html>

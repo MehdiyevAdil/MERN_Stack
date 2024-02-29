@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Üçrəqəmli ədədin rəqəmlərinə ayrılması</title>
+</head>
+
+<body>
+    <div class="classSize homeWork-1">
+        <h1>Üçrəqəmli ədədin rəqəmlərinə ayrılması</h1>
+        <input type="text" id="number-1" placeholder="ededi daxil edin">
+        <input type="text" id="result" placeholder="Cavab">
+        <button onclick="homeWorkOne()">Nəticə</button>
+    </div>
+    <script>
+        function homeWorkOne() {
+            var num1 = parseFloat(document.getElementById('number-1').value);
+            var sum;
+            let tek = num1 % 10;
+            let yuz = Math.floor(num1 / 100);
+            let onluq = Math.floor((num1 % 100) / 10);
+            sum=yuz+" "+onluq+" "+tek;
+            document.getElementById('result').value=sum;
+        }
+
+
+    </script>
+</body>
+
+</html>

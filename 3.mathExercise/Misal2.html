@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Dərs nailiyyətlərinin səviyyəsi</title>
+</head>
+<body>
+    <div class="classSize homeWork-1">
+        <h1>Dərs nailiyyətlərinin səviyyəsi</h1>
+        <input type="text" id="number-1" placeholder="Bali daxil edin">
+        <button onclick="homeWorkOne()">Nəticə</button>
+        <input type="text" id="result" placeholder="Cavab">
+    </div>
+    <script>
+        function homeWorkOne() {
+            var point = parseFloat(document.getElementById('number-1').value);
+            var sum;
+            if (point >= 1 && point <= 3) {
+                sum = "Initial";
+            } else if (point >= 4 && point <= 6) {
+                sum = "Average";
+            } else if (point >= 7 && point <= 9) {
+                sum = "Sufficient";
+            } else if (point >= 10 && point <= 12) {
+                sum = "High";
+            } else {
+                sum = "Enter correctly";
+            }
+            document.getElementById('result').value = sum;
+        }
+    </script>
+</body>
+</html>
