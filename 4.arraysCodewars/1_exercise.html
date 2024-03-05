@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise:1
+      Bütün müsbətlərin cəmini qaytarın.
+    </title>
+</head>
+<body>
+    <script>
+function positiveSum(arr) {
+  let sum = 0;
+  if (arr.every(function(num) {return num < 0; })) {
+    sum = 0; 
+  } else {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] > 0) {
+         sum+=arr[i];
+      }
+    }
+  }
+  console.log(sum);
+}
+positiveSum([2, -4, 6, 7, -3, 5]); 
+positiveSum([-2, -4, -6]); 
+
+
+    </script>
+</body>
+</html>

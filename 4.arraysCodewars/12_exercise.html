@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise: 12
+        Fərqli elementi tapib cixisa verin
+    </title>
+</head>
+<body>
+    <script>
+      function findUniq(arr) {
+    // Massivi sıralayırıq ki, eyni elementlər bitişik olsunlar
+    arr.sort();
+
+    // İlk iki elementi yoxlayırıq, əgər onlar fərqli olarsa, birinci elementi qaytarırıq
+    if (arr[0] !== arr[1]) {
+        return arr[0];
+    }
+    // Əks təqdirdə, axırıncı elementi qaytarırıq
+    return arr[arr.length - 1];
+}
+
+console.log(findUniq([1, 1, 1, 2, 1, 1])); // Nəticə: 2
+
+
+    </script>
+</body>
+</html>

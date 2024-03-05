@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise: 8
+        Massive daxil edilen stringin bosluga gore ayrilib massive elave edilsin
+            ve qarsisinda uzunlugu yazilsin
+            What if we need the length of the words separated by a space to be added at 
+                the end of that same word and have it returned as an array?
+    </title>
+</head>
+<body>
+    <script>
+        function addLength(str) {
+    // bosluga gore ayirma
+    let words = str.split(" ");
+    console.log(words.length)
+
+    // her kelimenin uzunlugunu alib resulta push edirik
+    let result = [];
+    for (let i = 0; i < words.length; i++) {
+        let word = words[i];//ayrilmis soz
+        let length = word.length;//ayrilmis sozun uzunlugu
+        result.push(word + " " + length);//soz ve uzunlugun yazilmasi
+    }
+
+    return result;
+}
+
+let output = addLength("apple banana");
+console.log(output); // ["apple 5", "banana 6"]
+
+    </script>
+</body>
+</html>

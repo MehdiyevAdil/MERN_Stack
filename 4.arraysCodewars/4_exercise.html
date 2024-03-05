@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise:4
+      Daxil edilən ifadənin functionun daxilindəki indexinin gosterilməsi
+    </title>
+</head>
+<body>
+    <script>
+function findNeedle(haystack) {
+  let myIndex = -1; 
+  haystack.forEach((item, index) => {
+    if (item === 'needle') {
+      myIndex = index;
+    }
+  });
+
+  console.log("Index of 'needle':", myIndex); 
+}
+
+findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]);
+
+
+    </script>
+</body>
+</html>

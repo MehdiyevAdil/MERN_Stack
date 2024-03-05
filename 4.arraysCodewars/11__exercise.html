@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise: 11
+        Birlər və sıfırlar massivini nəzərə alaraq, ekvivalent ikili dəyəri tam ədədə çevirin.
+    </title>
+</head>
+
+<body>
+    <script>
+       function binaryArrayToNumber(arr) {
+    let sum = 0;
+    let power = arr.length - 1;
+
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i] * Math.pow(2, power);
+        power--;
+    }
+
+    return sum; 
+}
+
+let result = binaryArrayToNumber([0, 1, 1, 0]);
+console.log(result); // 6
+
+    </script>
+</body>
+
+</html>

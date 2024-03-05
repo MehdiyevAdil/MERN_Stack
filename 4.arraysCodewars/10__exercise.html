@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise:10
+        Massiv götürən və digər elementlərin sırasını qoruyaraq 
+            bütün sıfırları sona köçürən bir alqoritm yazın.
+    </title>
+</head>
+<body>
+    <script>
+        function moveZeros(arr) {
+    let sifirIndex = 0; // Sıfırları taşımak için bir indeks oluşturulur ve 0 olarak başlatılır.
+
+    // Dizideki tüm öğeleri kontrol etmek için bir döngü başlatılır.
+    for (let i = 0; i < arr.length; i++) {
+
+        // Eğer mevcut öğe sıfırdan farklıysa:
+        if (arr[i] !== 0) {
+            // Mevcut öğe, sıfırların sonrasına taşınır.
+            arr[sifirIndex] = arr[i];
+            console.log(arr[i])
+            // Sıfırları taşımak için kullanılan indeks bir artırılır.
+            sifirIndex++;
+        }
+    }
+
+    // Sıfırlar dizinin geri kalanına doldurulur.
+    while (sifirIndex < arr.length) {
+        arr[sifirIndex] = 0;
+        sifirIndex++;
+    }
+
+    return arr; // İşlenmiş diziyi döndürür.
+}
+
+// Örnek kullanım:
+console.log(moveZeros([false, 1, 0, 1, 2, 0, 1, 3, "a"])); // [false, 1, 1, 2, 1, 3, "a", 0, 0]
+
+
+    </script>
+</body>
+</html>
